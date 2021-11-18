@@ -6,6 +6,13 @@ pipeline {
             steps {
                 echo 'Executing Build Stage'
             }
+            post
+            {
+                always
+                {
+                    emailext attachLog: true, body: 'MTWS Simple Pipeline ran1.', subject: 'MTWS Simple Pipeline result notification', to: 'mr.baagil@gmail.com'
+                }
+            }
         }
         stage('Test') {
             steps {
