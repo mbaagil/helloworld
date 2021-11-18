@@ -27,7 +27,7 @@ pipeline {
     {
         always
         {
-            emailext attachLog: true, body: 'MTWS Simple Pipeline ran.', subject: 'MTWS Simple Pipeline result notification', to: 'mbaagil@conceptplusllc.com'
+            emailext attachLog: true, body: 'MTWS Simple Pipeline ran.', subject: 'MTWS Simple Pipeline result notification', to: 'mr.baagil@gmail.com'
         }
     }
 }
